@@ -1,0 +1,148 @@
+Script started on Mon 15 Apr 2019 04:17:54 PM PDT
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW12 $[00m date
+Mon Apr 15 16:17:55 PDT 2019
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW12 $[00m ls -l
+total 16
+-rw-rw-r-- 1 cs1c cs1c 7740 Apr 15 16:05 hw12.cpp
+-rw-rw-r-- 1 cs1c cs1c    0 Apr 15 16:17 hw12.scr
+-rw-rw-r-- 1 cs1c cs1c  224 Apr 15 10:29 Makefile
+-rw-rw-r-- 1 cs1c cs1c 3428 Apr 15 16:05 queue.h
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW12 $[00m mae[Kke all
+g++ -g hw12.cpp -o hw12
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW12 $[00m ls -l
+total 88
+-rwxrwxr-x 1 cs1c cs1c 73272 Apr 15 16:17 [0m[01;32mhw12[0m
+-rw-rw-r-- 1 cs1c cs1c  7740 Apr 15 16:05 hw12.cpp
+-rw-rw-r-- 1 cs1c cs1c     0 Apr 15 16:17 hw12.scr
+-rw-rw-r-- 1 cs1c cs1c   224 Apr 15 10:29 Makefile
+-rw-rw-r-- 1 cs1c cs1c  3428 Apr 15 16:05 queue.h
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW12 $[00m ./w[Khw12
+======= TEST WITH QUEUE INT ==============
+== Six addition:
+Queue: [ 1 ]
+Queue: [ 1 2 ]
+Queue: [ 1 2 3 ]
+Queue: [ 1 2 3 4 ]
+Queue: [ 1 2 3 4 5 ]
+Queue: [ 1 2 3 4 5 6 ]
+== Four deletions:
+1
+Queue: [ 2 3 4 5 6 ]
+2
+Queue: [ 3 4 5 6 ]
+3
+Queue: [ 4 5 6 ]
+4
+Queue: [ 5 6 ]
+== Five addition:
+Queue: [ 5 6 10 ]
+Queue: [ 5 6 10 11 ]
+Queue: [ 5 6 10 11 12 ]
+Queue: [ 5 6 10 11 12 13 ]
+Queue: [ 5 6 10 11 12 13 14 ]
+Queue: [ 5 6 10 11 12 13 14 15 ]
+== Three deletions:
+5
+Queue: [ 6 10 11 12 13 14 15 ]
+6
+Queue: [ 10 11 12 13 14 15 ]
+10
+Queue: [ 11 12 13 14 15 ]
+============SUMMARY================
+Front: 11
+Is full: 0
+Is empty: 0
+Test constructor copy.
+Queue copy: [ 11 12 13 14 15 ]
+Test copy assign: 
+Queue assign:[ 11 12 13 14 15 ]
+Filling Queue
+Is full: 1
+Queue: [ 11 12 13 14 15 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 ]
+Remove all queue
+Is empty: 1
+Is full: 0
+Queue: [ ]
+============================================================
+======= TEST WITH QUEUE DOUBLE ==============
+== Six addition:
+Queue: [ 1.5 ]
+Queue: [ 1.5 2.5 ]
+Queue: [ 1.5 2.5 3.5 ]
+Queue: [ 1.5 2.5 3.5 4.5 ]
+Queue: [ 1.5 2.5 3.5 4.5 5.5 ]
+Queue: [ 1.5 2.5 3.5 4.5 5.5 6.5 ]
+== Four deletions:
+1.5
+Queue: [ 2.5 3.5 4.5 5.5 6.5 ]
+2.5
+Queue: [ 3.5 4.5 5.5 6.5 ]
+3.5
+Queue: [ 4.5 5.5 6.5 ]
+4.5
+Queue: [ 5.5 6.5 ]
+== Five addition:
+Queue: [ 5.5 6.5 10.5 ]
+Queue: [ 5.5 6.5 10.5 11.5 ]
+Queue: [ 5.5 6.5 10.5 11.5 12.5 ]
+Queue: [ 5.5 6.5 10.5 11.5 12.5 13.5 ]
+Queue: [ 5.5 6.5 10.5 11.5 12.5 13.5 14.5 ]
+Queue: [ 5.5 6.5 10.5 11.5 12.5 13.5 14.5 15.5 ]
+== Three deletions:
+5.5
+Queue: [ 6.5 10.5 11.5 12.5 13.5 14.5 15.5 ]
+6.5
+Queue: [ 10.5 11.5 12.5 13.5 14.5 15.5 ]
+10.5
+Queue: [ 11.5 12.5 13.5 14.5 15.5 ]
+============SUMMARY================
+Front: 11.5
+Is full: 0
+Is empty: 0
+Test constructor copy.
+Queue copy: [ 11.5 12.5 13.5 14.5 15.5 ]
+Test copy assign: 
+Queue assign:[ 11.5 12.5 13.5 14.5 15.5 ]
+Filling Queue
+Is empty: 0
+Is full: 1
+Queue: [ 11.5 12.5 13.5 14.5 15.5 100.5 101.5 102.5 103.5 104.5 105.5 106.5 107.5 108.5 109.5 110.5 111.5 112.5 113.5 114.5 115.5 116.5 117.5 118.5 119.5 120.5 121.5 122.5 123.5 124.5 125.5 126.5 127.5 128.5 129.5 130.5 131.5 132.5 133.5 134.5 135.5 136.5 137.5 138.5 139.5 140.5 141.5 142.5 143.5 144.5 145.5 146.5 147.5 148.5 149.5 150.5 151.5 152.5 153.5 154.5 155.5 156.5 157.5 158.5 159.5 160.5 161.5 162.5 163.5 164.5 165.5 166.5 167.5 168.5 169.5 170.5 171.5 172.5 173.5 174.5 175.5 176.5 177.5 178.5 179.5 180.5 181.5 182.5 183.5 184.5 185.5 186.5 187.5 188.5 189.5 190.5 191.5 192.5 193.5 ]
+Remove all queue
+Is empty: 1
+Is full: 0
+Queue: [ ]
+============================================================
+======= TEST WITH QUEUE STRING ==============
+== Six addition:
+Queue: [ one ]
+Queue: [ one two ]
+Queue: [ one two three ]
+Queue: [ one two three four ]
+Queue: [ one two three four five ]
+Queue: [ one two three four five six ]
+== Four deletions:
+one
+Queue: [ two three four five six ]
+two
+Queue: [ three four five six ]
+three
+Queue: [ four five six ]
+four
+Queue: [ five six ]
+============SUMMARY================
+Front: five
+Is full: 0
+Is empty: 0
+Test constructor copy.
+Queue copy: [ five six ]
+Test copy assign: 
+Queue assign:[ five six ]
+Remove all queue
+Is empty: 1
+Is full: 0
+Queue: [ ]
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW12 $[00m exit[K[K[K[K
+]0;cs1c@cs1c-VirtualBox ~/Desktop/HW12[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/HW12 $[00m exit
+exit
+
+Script done on Mon 15 Apr 2019 04:18:25 PM PDT
